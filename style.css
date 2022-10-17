@@ -34,6 +34,10 @@ body {
 .icons {
     width: 25px;
     margin: 5px;
+   
+}
+.icon-btn {
+    cursor: pointer;
 }
 #logo {
     /* align-self: center; */
@@ -73,8 +77,10 @@ body {
     background-color: #DBFFF4;
 }
 .user-profile {
+    position:relative;
     width: 96%;
-    margin: 0 auto
+    margin: 0 auto;
+    
 }
 .profile-img {
     width: 100%;
@@ -82,4 +88,83 @@ body {
     object-fit: cover;
     margin: 0 auto;
     border-radius: 15px;
+    height: 500px;
+}
+.user-info {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    color: white;
+    line-height: 10px;
+}
+.like-badge {
+    position: absolute;
+    top:30px;
+    left: 5px;
+    width: 120px;
+    transform: rotate(-40deg)
+}
+.not-liked-badge {
+    position: absolute;
+    top:30px;
+    left: 5px;
+    width: 120px;
+    transform: rotate(-40deg)
+}
+.chat-section {
+    height: 200px;
+    background-color: aliceblue;
+    width: 400px;
+    margin: 0 auto;
+}
+#chat-form {
+    clear: both;
+}
+#chat-comment {
+  
+    padding: 8px 10px;
+    width: 85%;
+    border-radius: 16px;
+    border: none;
+    display: block;
+    /* margin-top: 10px; */
+}
+#chat-btn {
+    display: block;
+    align-self: center;
+    border-radius: 50%;
+    border: none;
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+#chat-btn:hover, #chat-btn:focus {
+    background-color: aquamarine;
+}
+.input-container {
+    display: flex;
+    width: 80%;
+    margin: 60px auto;
+    justify-content: space-between;
+}
+.comment-section {
+    padding: 0px 0px;
+    width: 70%;
+    margin-right: 5px;
+    float:right;
+  
+    
+}
+.comment-entered {
+    padding: 5px 5px;
+    margin-top: 8px;
+    background: white;
+    border-radius: 16px;
+    border: none;
+}
+#chat-title {
+  
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0;
 }
