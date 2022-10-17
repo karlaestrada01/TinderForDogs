@@ -147,6 +147,7 @@ body {
     border-radius: 16px;
     border: none;
     display: block;
+  
 }
 #chat-btn {
     display: block;
@@ -177,7 +178,7 @@ body {
     
 }
 .comment-entered {
-    padding: 5px 5px;
+    padding: 5px 5px 5px 10px;
     margin-top: 5px;
     background: white;
     border-radius: 16px;
