@@ -201,3 +201,14 @@ body {
     padding: 2px 6px;
     cursor: pointer;
 }
+.ending-text-container {
+    display: flex; 
+    align-items: center;
+    height: 100%;
+}
+#ending-text {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(220, 53, 53);
+}

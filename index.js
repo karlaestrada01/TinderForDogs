@@ -27,10 +27,23 @@ function renderData() {
  * Renders onto the screen a new dog and its information
  */
 function render() {
-    currentDog = getNextDog()
-    userProfile.innerHTML = currentDog.getDogHtml()
-    commentSection.innerHTML = currentDog.getCommentsHtml()
-    index++ 
+    if(index < dogsArray.length){ 
+        currentDog = getNextDog()
+        userProfile.innerHTML = currentDog.getDogHtml()
+        commentSection.innerHTML = currentDog.getCommentsHtml()
+        index++ 
+    }
+    else {
+        userProfile.style.height = "500px";
+        userProfile.innerHTML = `
+        <div class="ending-text-container">
+        <p id="ending-text">No more dogs in your area!</p>
+        </div>`
+       
+    }
+   
+    
+    
 }
 /**
  * Updates the comments of the current dog
@@ -47,10 +60,7 @@ function getNextDog() {
     if(index < dogsArray.length){ 
         return dogsArray[index]
     }
-    else {
-        index = 0
-        return dogsArray[index]
-    }
+ 
 }
 /**
  * Event listener when a user presses the heart button
