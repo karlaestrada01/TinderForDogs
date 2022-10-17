@@ -89,7 +89,7 @@ heartBtn.addEventListener("click", () => {
                 render()
             })
         
-        }, 1500)
+        }, 1000)
     
 }
 })
