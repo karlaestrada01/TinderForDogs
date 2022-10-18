@@ -6,6 +6,7 @@ body {
     padding: 0;
 }
 .container-wrap {
+    position: relative;
     max-width: 400px;
     background-color: white;
     width: 90%;
@@ -123,7 +124,7 @@ body {
 }
 .chat-section {
     position: absolute;
-    bottom: 80px;
+    bottom: 0px;
     z-index: 2000;
     min-height: 200px;
     max-height: 300px;
