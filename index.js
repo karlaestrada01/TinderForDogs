@@ -1,3 +1,9 @@
+/**
+ * Tinder For Dogs
+ * @version 1.0
+ * @author Karla Estrada
+ * @date 10.17.2022
+ */
 import {dogs} from "./data.js"
 import Dog from "./Dog.js"
 
