@@ -111,7 +111,7 @@ xBtn.addEventListener("click", () => {
             userProfile.innerHTML += currentDog.dogNotLiked()
             setTimeout(() =>{
                 render()
-            }, 1500)
+            }, 1000)
             
         }, 1000)
     }
