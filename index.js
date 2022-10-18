@@ -93,7 +93,7 @@ heartBtn.addEventListener("click", () => {
             document.querySelector(".next-btn").addEventListener("click", ()=> {
                 resetPage()
                 render()
-            })
+            }, {once: true})
         
         }, 1000)
     
