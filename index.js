@@ -84,12 +84,8 @@ heartBtn.addEventListener("click", () => {
             document.querySelector(".btn-container").style.width = "140px"
             document.querySelector(".next-btn").classList.remove("hidden-next-btn")
             if(currentDog.hasBeenLiked){
-            chatLogo.addEventListener("click", () => {
-                chatSection.classList.remove("hidden")
-                document.getElementById("chat-title").textContent = `Start a chart with ${currentDog.name}!`
-            }, {once : true})
-
-        }
+                chatLogo.addEventListener("click", addChatBtn)
+            }
             document.querySelector(".next-btn").addEventListener("click", ()=> {
                 resetPage()
                 render()
@@ -99,6 +95,12 @@ heartBtn.addEventListener("click", () => {
     
 }
 })
+
+function addChatBtn() {
+    chatSection.classList.remove("hidden")
+    document.getElementById("chat-title").textContent = `Start a chart with ${currentDog.name}!`
+}
+
 /**
  * Event listener when the user presses the x button
  */
@@ -139,7 +141,7 @@ document.getElementById("close-btn").addEventListener("click", () => {
  * Resets styling of the page
  */
 function resetPage () {
-    
+    chatLogo.removeEventListener("click", addChatBtn)
     chatSection.classList.add("hidden")
     chatLogo.style.paddingBottom = "0px"
     chatLogo.style.borderBottom = "none"
@@ -151,7 +153,3 @@ function resetPage () {
 renderData()
 render()
 
-
-
-//issue when you already liked a person then u click x it doesnt work
-//for next dog to press x
